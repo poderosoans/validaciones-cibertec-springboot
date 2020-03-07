@@ -1,0 +1,14 @@
+http://localhost:8888/restservice/validaciones/identidad
+
+curl --location --request POST 'http://localhost:8888/restservice/validaciones/identidad' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"dni": "23232323",
+"huellaDerecha": "indice",
+"huellaIzquierda": "pulgar"
+}'
+
+=====
+http://localhost:8888/restservice/validaciones/23232323
+
+curl --location --request GET 'http://localhost:8888/restservice/validaciones/23232323'
